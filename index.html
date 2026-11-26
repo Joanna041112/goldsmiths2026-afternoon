@@ -35,6 +35,29 @@
 
        console.log(x);
 
+       var list0fFruit =[
+           'orange',
+           'apple',
+           'banana',
+       ];
+
+       var list0fImages = [
+           "https://media.istockphoto.com/id/1224819805/zh/%E7%85%A7%E7%89%87/%E5%A1%94%E6%8B%89%E7%B4%8D%E5%9F%BA%E5%B1%B1%E5%9C%A8%E6%97%A5%E8%90%BD%E6%99%82%E5%8F%8D%E5%B0%84.jpg?s=612x612&w=0&k=20&c=IJ6UoRLp_iCf257QVDGZFlmYwrim_FHx_sI1E874Tro="
+       ]
+
+       list0fFruit[3]='pear';
+
+       alert(list0fFruit[3]);
+
+       document.getElementById("joanna").innerText="paul";
+
+       function init() {
+           document.getElementById("joanna").innerText="paul";
+           document.getElementById("swapimage").src = list0fImages[0];
+           document.getElementById("swapimage").style.width="500px";
+       }
+
+
     </script>
     <style>
         heml, body
@@ -68,13 +91,14 @@
 
 
 </head>
-<body>
+<body onload="init()">
+
 <p class="thursday" id="joan">   hello world </p>
 <p class="monday" id="joanna">goodbye...</p>
 <p>goodbye...</p>
 <p>goodbye...</p>
 
-<p><img width="500px" height="500px" src="https://flowersandplantsco.com/cdn/shop/files/birthday-flowers-london-uk-fp_1.jpg?v=1774878239&width=700" alt="1"></p>
+<p><img id="swapimage" width="500px" height="500px" src="https://flowersandplantsco.com/cdn/shop/files/birthday-flowers-london-uk-fp_1.jpg?v=1774878239&width=700" alt="1"></p>
 <video width="500px" height="500px" controls autoplay loop with="50">
   <source src="videos/JoannaWang_term1_week3.mp4" type="video/mp4"></video>
 <video width="200" height="200" controls autoplay loop with="200">
